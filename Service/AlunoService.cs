@@ -22,9 +22,18 @@ namespace Service
             this.dbcontext = dbcontext;
         }
 
-        public async Task<Aluno> Create()
+        public async Task<bool> Create(Aluno dados)
         {
-            throw new NotImplementedException();
+            try
+            {
+                dbcontext.Aluno.Add(dados);
+                await dbcontext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
         public async Task<Aluno> Delete(long Id)

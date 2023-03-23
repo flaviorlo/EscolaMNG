@@ -11,7 +11,7 @@ namespace Service.Interface
     {
         Task<IEnumerable<Aluno>> GetAlunos();
         Task<Aluno> GetIdAlunos(long Id);
-        Task<Aluno> Create();
+        Task<bool> Create(Aluno dados);
         Task<Aluno> Update();
         Task<Aluno> Delete(long Id);
 
