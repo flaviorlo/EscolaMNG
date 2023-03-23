@@ -31,5 +31,18 @@ namespace EscolaMNG.Controllers
             }
            
         }
+
+        [HttpPost("/Cadastrar")]
+        public async Task<bool> CreateAluno(Aluno dados)
+        {
+            try
+            {
+                return await _alunoservice.Create(dados);
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }
