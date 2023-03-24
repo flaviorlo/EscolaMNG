@@ -44,5 +44,18 @@ namespace EscolaMNG.Controllers
                 return false;
             }
         }
+
+        [HttpDelete("/Deletar")]
+        public async Task<bool> DeleteAluno(int Id)
+        {
+            try
+            {
+                return await _alunoservice.Delete(Id);
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

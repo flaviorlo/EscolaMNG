@@ -36,11 +36,22 @@ namespace Service
             }
         }
 
-        public async Task<Aluno> Delete(long Id)
+        public async Task<bool> Delete(int Id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Aluno result = await GetIdAlunos(Id);
+                dbcontext.Aluno.Remove(result);
+                await dbcontext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
+        
         public async Task<IEnumerable<Aluno>> GetAlunos()
         {
             try
@@ -58,9 +69,16 @@ namespace Service
             throw new NotImplementedException();
         }
 
-        public async Task<Aluno> GetIdAlunos(long Id)
+        public async Task<Aluno> GetIdAlunos(int codigo)
         {
-            throw new NotImplementedException();
+            try
+            {               
+                return dbcontext.Aluno.Where(x => x.Id == codigo)?.FirstOrDefault(); ;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         public async Task<Aluno> Update()
