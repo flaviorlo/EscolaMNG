@@ -10,10 +10,10 @@ namespace Service.Interface
     public interface IAlunoService
     {
         Task<IEnumerable<Aluno>> GetAlunos();
-        Task<Aluno> GetIdAlunos(long Id);
+        Task<Aluno> GetIdAlunos(int Id);
         Task<bool> Create(Aluno dados);
         Task<Aluno> Update();
-        Task<Aluno> Delete(long Id);
+        Task<bool> Delete(int Id);
 
 
     }
