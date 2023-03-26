@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscolaMNG", "EscolaMNG\EscolaMNG.csproj", "{7B72F6EC-A8D2-4B58-A08F-FA8676586415}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EscolaMNG", "EscolaMNG\EscolaMNG.csproj", "{7B72F6EC-A8D2-4B58-A08F-FA8676586415}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Application", "1-Application", "{D61ECD0E-FDDA-47C5-953B-DE35CDBDB730}"
 EndProject
@@ -15,13 +15,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infra", "4-Infra", "{C5C5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Test", "5-Test", "{27EE7C22-6FB3-4F72-AB87-595DF6550A97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Domani\Dominio.csproj", "{7E9CDD1A-4D90-4540-9C26-101E1128F3CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominio", "Domani\Dominio.csproj", "{7E9CDD1A-4D90-4540-9C26-101E1128F3CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{05D5B324-82D1-4198-9BC2-456A9D768716}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{05D5B324-82D1-4198-9BC2-456A9D768716}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infraestructure", "Infraestructure\Infraestructure.csproj", "{C63FF991-C2A9-40F5-9732-AC2D2A53332E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infraestructure", "Infraestructure\Infraestructure.csproj", "{C63FF991-C2A9-40F5-9732-AC2D2A53332E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{30497064-3EDC-413F-81E0-50EF6F4B0CB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{30497064-3EDC-413F-81E0-50EF6F4B0CB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppReact", "AppReact\AppReact.csproj", "{0B334EC2-CC1F-4AC7-BEA6-38CF9023543C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{30497064-3EDC-413F-81E0-50EF6F4B0CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30497064-3EDC-413F-81E0-50EF6F4B0CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30497064-3EDC-413F-81E0-50EF6F4B0CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B334EC2-CC1F-4AC7-BEA6-38CF9023543C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B334EC2-CC1F-4AC7-BEA6-38CF9023543C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B334EC2-CC1F-4AC7-BEA6-38CF9023543C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B334EC2-CC1F-4AC7-BEA6-38CF9023543C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{05D5B324-82D1-4198-9BC2-456A9D768716} = {76A2A56C-7EB5-4CEE-94B9-12097B4FF33A}
 		{C63FF991-C2A9-40F5-9732-AC2D2A53332E} = {C5C55D9B-F961-4B67-B78F-C76375D4B93B}
 		{30497064-3EDC-413F-81E0-50EF6F4B0CB2} = {27EE7C22-6FB3-4F72-AB87-595DF6550A97}
+		{0B334EC2-CC1F-4AC7-BEA6-38CF9023543C} = {D61ECD0E-FDDA-47C5-953B-DE35CDBDB730}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1E1F5FA9-4C3D-4B0D-B5A3-7826054CC480}

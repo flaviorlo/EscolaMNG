@@ -18,16 +18,16 @@ namespace EscolaMNG.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<Aluno>> GetAlunos() 
+        public async Task<IActionResult> GetAlunos() 
         {
             try
             {
                 var dados = await _alunoservice.GetAlunos();
-                return dados.ToList();
+                return StatusCode(StatusCodes.Status200OK, dados.ToList());
             }
             catch
             {
-                return (IEnumerable<Aluno>)BadRequest("Request Invalid");
+                return BadRequest("Request Invalid");
             }
            
         }
