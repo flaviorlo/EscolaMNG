@@ -48,7 +48,7 @@ const App = () => {
                                 <th>Nome</th>
                                 <th>E-mail</th>
                                 <th>Idade</th>
-                                <th>Operação</th>
+                                {/*<th>Operação</th>*/}
                             </tr>
                         </thead>
                         <tbody>
