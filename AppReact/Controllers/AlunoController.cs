@@ -1,12 +1,10 @@
-﻿using Dominio.Model;
+﻿using AppReact._2_Domain.Model;
+using AppReact._3_Service.Interface;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualBasic;
-using Service.Interface;
 
-namespace EscolaMNG.Controllers
+namespace AppReact.Controllers
 {
-    [Route("v1/[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class AlunoController : ControllerBase
     {
@@ -18,7 +16,8 @@ namespace EscolaMNG.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAlunos() 
+        [Route("GetAllAlunos")]
+        public async Task<IActionResult> GetAllAlunos()
         {
             try
             {
@@ -29,7 +28,7 @@ namespace EscolaMNG.Controllers
             {
                 return BadRequest("Request Invalid");
             }
-           
+
         }
 
         [HttpPost("/Cadastrar")]
